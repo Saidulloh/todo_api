@@ -6,7 +6,7 @@ from user.views import UserViewSet
 router = DefaultRouter()
 
 router.register(
-    prefix='user',
+    prefix='users',
     viewset=UserViewSet
 )
 

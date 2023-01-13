@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
 
-class BaseUserSerializer(serializers.BaseSerializer):
+class BaseUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'email', 'password')
